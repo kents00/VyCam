@@ -1,4 +1,5 @@
 # VyCam
+![Tutorial](https://user-images.githubusercontent.com/69900896/233632585-87eac391-9309-48ee-a61a-276cf991867d.gif)
 
 "Vycam allows you to change aspect ratios and focal lengths with a single click."
 
