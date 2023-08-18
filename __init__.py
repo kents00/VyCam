@@ -94,7 +94,8 @@ class Vycam_op_Camera(Operator):
 
     @classmethod
     def poll(cls, context):
-        return True
+        existing_cameras = [obj for obj in bpy.data.objects if obj.type == 'CAMERA']
+        return not existing_cameras
 
     def execute(self, context):
         camera_manager = POVCamera()
@@ -108,7 +109,7 @@ class Vycam_op(Operator):
 
     @classmethod
     def poll(cls, context):
-        return True
+        return context.active_object is not None and context.active_object.type == 'CAMERA'
 
     def execute(self, context):
         scene = context.scene
@@ -116,20 +117,28 @@ class Vycam_op(Operator):
 
         if custom_scene_property.focal_length_presets == "F1":
             bpy.context.object.data.lens = 4
+            bpy.context.object.data.ortho_scale = 4
         elif custom_scene_property.focal_length_presets == "F2":
             bpy.context.object.data.lens = 14
+            bpy.context.object.data.ortho_scale = 14
         elif custom_scene_property.focal_length_presets == "F3":
             bpy.context.object.data.lens = 35
+            bpy.context.object.data.ortho_scale = 35
         elif custom_scene_property.focal_length_presets == "F4":
             bpy.context.object.data.lens = 85
+            bpy.context.object.data.ortho_scale = 85
         elif custom_scene_property.focal_length_presets == "F5":
             bpy.context.object.data.lens = 135
+            bpy.context.object.data.ortho_scale = 135
         elif custom_scene_property.focal_length_presets == "F6":
             bpy.context.object.data.lens = 200
+            bpy.context.object.data.ortho_scale = 200
         elif custom_scene_property.focal_length_presets == "F7":
             bpy.context.object.data.lens = 300
+            bpy.context.object.data.ortho_scale = 300
         elif custom_scene_property.focal_length_presets == "F8":
             bpy.context.object.data.lens = int(custom_scene_property.custom_focal_length)
+            bpy.context.object.data.ortho_scale = int(custom_scene_property.custom_focal_length)
 
 
         if custom_scene_property.screen_presets == "R1":
