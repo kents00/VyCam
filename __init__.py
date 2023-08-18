@@ -1,7 +1,7 @@
 bl_info = {
     "name" : "VyCam",
     "blender" : (3,4,1),
-    "version" : (4,15,23),
+    "version" : (4,5),
     "category" : "3D View",
     "author" : "Kent Edoloverio",
     "location" : "3D View > VyCam",
