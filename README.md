@@ -46,3 +46,6 @@ The concept of focal length pertains to the camera's technical specification and
 - 135mm+ - Medium telephoto
 - 200mm+ - Macro
 - 300mm+ - Super telephoto
+
+## Issues
+If you're having trouble integrating this code into your addon, [open a new issue](https://github.com/kents00/KLicense/issues). As the module continues to develop, it will be easier for more developers to integrate updates and improve blender's overall user performance!
