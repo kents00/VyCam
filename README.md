@@ -3,6 +3,8 @@
 
 "Vycam allows you to change aspect ratios and focal lengths with a single click."
 
+![Blender](https://img.shields.io/badge/blender|3.6-EA7600.svg?style=for-the-badge&logo=blender&logoColor=white)
+
 ## What are the Aspect Ratios?
 
 Aspect ratio is a fundamental concept in digital media, denoting the mathematical relationship between an image or video's width and height. In Blender, aspect ratios are utilized extensively to determine various output specifications such as render resolution, camera settings, and texturing of images or videos.
