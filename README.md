@@ -3,7 +3,7 @@
 
 "Vycam allows you to change aspect ratios and focal lengths with a single click."
 
-![Blender](https://img.shields.io/badge/blender|3.6-EA7600.svg?style=for-the-badge&logo=blender&logoColor=white)
+![Blender](https://img.shields.io/badge/blender|4.0.2-EA7600.svg?style=for-the-badge&logo=blender&logoColor=white)
 
 ## What are the Aspect Ratios?
 
